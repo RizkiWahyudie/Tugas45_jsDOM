@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="hash"></p>
+    <p id="host"></p>
+    <button onclick="hashLocat()">tampilkan hash</button>
+    <button onclick="hostLocat()">tampilkan host</button>
+    <p id="hostname"></p>
+    <button onclick="hostnameLocat()">tampilkan hostname</button>
+    <p id="href"></p>
+    <button onclick="hrefLocat()">tampilkan href</button>
+
+    <script type="text/javascript">
+        function hashLocat(){
+            location.hash = "rizkiWahyudie"
+            var x = "Sekarang anchornya : " + location.hash;
+            document.getElementById("hash").innerHTML = x;
+        }
+        function hostLocat(){
+            var x = location.host;
+            document.getElementById("host").innerHTML = x;
+        }
+        function hostnameLocat(){
+            var y = location.hostname;
+            document.getElementById("hostname").innerHTML = y;
+        }
+        function hrefLocat(){
+            var y = location.href;
+            document.getElementById("href").innerHTML = y;
+        }
+    </script>
+</body>
+</html>
